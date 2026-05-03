@@ -1,0 +1,40 @@
+:root {
+  --red: #d21f17;
+  --red-dark: #a8170f;
+  --red-light: #f84036;
+  --yellow: #FFB703;
+  --yellow-dark: #e6a500;
+  --bg: #F1FAEE;
+  --white: #ffffff;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-500: #adb5bd;
+  --gray-700: #495057;
+  --gray-900: #212529;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.15);
+  --radius: 10px;
+  --radius-lg: 16px;
+  --cart-width: 340px;
+  --topbar-height: 60px;
+  --font-title: 'Bangers', cursive;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--gray-900);
+  min-height: 100vh;
+}
+
+h1, h2, h3 { font-family: var(--font-title); letter-spacing: 1px; }
+button { cursor: pointer; font-family: var(--font-body); }
+input, select { font-family: var(--font-body); }
+
+@media (max-width: 768px) {
+  :root { --cart-width: 100%; }
+}

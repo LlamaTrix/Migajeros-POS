@@ -1,0 +1,123 @@
+.page {
+  min-height: 100vh;
+  background: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  top: -200px;
+  right: -200px;
+}
+
+.page::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.08);
+  bottom: -150px;
+  left: -100px;
+}
+
+.card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: var(--font-title);
+  font-size: 36px;
+  color: var(--red);
+  letter-spacing: 3px;
+  margin-bottom: 4px;
+}
+
+.sub {
+  color: var(--gray-500);
+  font-size: 14px;
+}
+
+.form { display: flex; flex-direction: column; gap: 16px; }
+
+.error {
+  background: #f8d7da;
+  color: #842029;
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+
+.field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.field input {
+  padding: 12px 16px;
+  border: 2px solid var(--gray-300);
+  border-radius: var(--radius);
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.field input:focus { border-color: var(--red); }
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--red);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-title);
+  letter-spacing: 2px;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+.btn:hover:not(:disabled) { background: var(--red-dark); }
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--gray-500);
+  margin-top: 28px;
+}

@@ -1,0 +1,2 @@
+.message { font-size: 15px; color: var(--gray-700); margin-bottom: 24px; line-height: 1.5; }
+.actions { display: flex; gap: 12px; justify-content: flex-end; }

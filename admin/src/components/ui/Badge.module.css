@@ -1,0 +1,24 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.default  { background: var(--gray-200); color: var(--gray-700); }
+.success  { background: #d1e7dd; color: #0f5132; }
+.danger   { background: #f8d7da; color: #842029; }
+.warning  { background: #fff3cd; color: #664d03; }
+.info     { background: #cff4fc; color: #055160; }
+.red      { background: var(--red); color: white; }
+.yellow   { background: var(--yellow); color: var(--gray-900); }
+
+.clickable {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.clickable:hover { opacity: 0.8; }

@@ -1,0 +1,96 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 240px;
+  right: 0;
+  height: var(--topbar-height);
+  background: white;
+  border-bottom: 3px solid var(--yellow);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  z-index: 50;
+  box-shadow: var(--shadow);
+}
+
+.menuBtn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.menuBtn span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--red);
+  border-radius: 2px;
+}
+
+.titleArea { flex: 1; }
+
+.title {
+  font-family: var(--font-title);
+  font-size: 22px;
+  color: var(--red);
+  letter-spacing: 1px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.timeBlock { text-align: right; }
+
+.time {
+  font-family: var(--font-title);
+  font-size: 18px;
+  color: var(--gray-900);
+  letter-spacing: 1px;
+}
+
+.date {
+  font-size: 11px;
+  color: var(--gray-500);
+  text-transform: capitalize;
+}
+
+.cartBubble {
+  background: var(--red);
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  animation: pulse 1s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.workerTag {
+  background: var(--yellow);
+  color: var(--gray-900);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .topbar { left: 0; }
+  .menuBtn { display: flex; }
+}

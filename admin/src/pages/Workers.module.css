@@ -1,0 +1,46 @@
+.codeReveal {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: var(--gray-700);
+}
+
+.bigCode {
+  font-family: monospace;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--red);
+  background: var(--bg);
+  border: 3px solid var(--yellow);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  letter-spacing: 8px;
+  margin: 8px 0;
+}
+
+.hint {
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+.sessionsTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sessionsTable th {
+  background: var(--red);
+  color: white;
+  padding: 10px 14px;
+  font-size: 13px;
+  text-align: left;
+}
+
+.sessionsTable td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--gray-200);
+  font-size: 14px;
+}
